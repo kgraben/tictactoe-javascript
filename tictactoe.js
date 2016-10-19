@@ -1,5 +1,19 @@
 var board= new Array(9);
 function reset(){
+  var table = document.createElement("table");
+  var row = 3; var col = 3; var bigRow=3; var bigCol=3;
+  for (i=0;i<row;i++){
+    var tableRow = table.insertRow(-1);
+    for(j=0;j<col;j++){
+      var cell = tableRow.insertCell(-1);
+      var button = document.createElement("INPUT");
+      button.setAttribute("type","button");
+      button.setAttribute("id","littleButton");
+      button.appendChild(document.createTextNode(""));
+      cell.appendChild(button);
+    }
+  }
+  document.getElementById("canvas").appendChild(table);
   document.getElementById("player").value= 1;
   for(i=0; i<board.length;i++){
     document.getElementById("button"+i).value = "";
