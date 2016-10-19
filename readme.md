@@ -1,0 +1,1 @@
+This project is a personal project to create tictactoe using javascript. End result is to be a "tictactoe-ception" game where one mark on the big board is determined by the winner of the smaller game within the mark.
